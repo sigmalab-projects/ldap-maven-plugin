@@ -1,0 +1,49 @@
+version: 1
+
+dn: dc=sigmalab,dc=de
+objectClass: domain
+dc: SIGMA-Lab
+
+dn: ou=apps,dc=sigmalab,dc=de
+objectClass: organizationalUnit
+objectClass: top
+ou: apps
+
+dn: ou=sigma,ou=apps,dc=sigmalab,dc=de
+objectClass: organizationalUnit
+objectClass: top
+ou: sigma
+
+### Users
+
+dn: ou=users,dc=sigmalab,dc=de
+objectClass: organizationalUnit
+objectClass: top
+ou: users
+
+dn: ou=people,ou=users,dc=sigmalab,dc=de
+objectClass: organizationalUnit
+objectClass: top
+ou: people
+
+dn: uid=ralf,ou=people,ou=users,dc=sigmalab,dc=de
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: person
+objectClass: top
+cn: Ralf Ralf
+sn: Ralfn
+uid: ralf
+mail: ralf@test.de
+userPassword: ralf
+
+dn: uid=peter,ou=people,ou=users,dc=sigmalab,dc=de
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: person
+cn: Peter Peter
+sn: Petern
+uid: peter
+mail: peter@test.de
+userPassword: peter
